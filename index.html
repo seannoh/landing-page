@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
   <title>Landing Page</title>
 </head>
 <body>
@@ -18,12 +19,56 @@
     </nav>
   </header>
   <main>
+    <section>
+      <h2>About Me</h2>
+      <ul>
+        <li>Name: Sean Oh</li>
+        <li>Github Page: <a href="https://github.com/seannoh">Github</a></li>
+        <li>Favorite Animal: Horse</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Horse Picture</h2> 
+      <figure>
+        <img width="700px" src="assets/images/shadowfax.jpeg" alt="white horse on a field">
+        <figcaption>Gandalf's horse Shadowfax from The Lord of the Rings</figcaption>
+      </figure>
+    </section>
+    <section>
+      <h2>About You</h2>
+      <form autocomplete="on">
+        <label for="fname">First Name:</label>
+        <input type="text" name="fname" id="fname" placeholder="ex: John">
+        <label for="lname">Last Name:</label>
+        <input type="text" name="lname" id="lname" placeholder="ex: Doe">
+        <label for="github-user">Github Username:</label>
+        <input type="url" name="github-user" id="github-user" placeholder="ex: johndoe">
+        <label for="email">Email Address</label>
+        <input type="email" name="email" id="email" placeholder="ex: johndoe@generic.com">
+        <label for="fav-animal">Favorite Animal</label>
+        <select name="fav-animal" onchange="checkOther(this.value)">
+          <option value="pick an animal">Pick an Animal</option>
+          <option value="dog">Dog</option>
+          <option value="cat">Cat</option>
+          <option value="horse">Horse</option>
+          <option value="other">Other</option>
+        </select>
+        <input type="text" name="animal" id="animal" style="display: none;">
+
+        <script>
+          function checkOther(value){
+            var element = document.getElementById("animal");/*  $(animal); */
+            if(value=="other"){
+              element.style.display = "block";
+            }else{
+              element.style.display = "none";
+            }
+          }
+        </script>
 
 
-    <form>
-
-    </form>
-
+      </form>
+    </section>
   </main>
 
   <footer>
