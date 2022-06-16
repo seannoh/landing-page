@@ -1,8 +1,10 @@
+/* Styling for all elements */
 * {
   margin: 0;
   padding: 0;
 }
 
+/* Element selectors */
 a {
   text-decoration: none;
   color: #1A1B41;
@@ -14,84 +16,6 @@ body {
   font-size: 20px;
   color: #1A1B41;
   background-color: honeydew;
-}
-
-/* form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-} */
-
-h1, h2{
-  margin: 20px;
-}
-
-#about-me {
-  margin-top: 100px;
-  display: block;
-  position: relative;
-  text-align: center;
-}
-
-#horse-pic {
-  text-align: center;
-}
-
-img {
-  border: 6px #BAFF29 solid;
-}
-
-#about-you {
-  text-align: center;
-  display: block;
-  position: relative;
-  margin: 20px;
-}
-
-.inputs {
-  position : relative;
-  width  : 400px;
-  margin : 0 auto;
-  padding: 10px;
-  display  : grid;
-  grid-gap : 20px;
-  grid-template-columns : repeat(2, 1fr);
-  grid-template-rows    : 1em 1em 1em 1em;
-}
-
-#animal {
-  align-self: right;
-}
-
-.center {
-  text-align: center;
-}
-
-header {
-  background-color: #6290c3;
-  height: 80px;
-  width: 100%;
-}
-
-header {
-  position: fixed;
-  top: 0px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 2px solid black;
-  z-index: 2;
-}
-
-nav ul {
-  list-style: none;
-}
-
-nav ul li {
-  display: inline;
-  text-align: center;
-  padding: 1em;
 }
 
 footer {
@@ -107,4 +31,73 @@ footer {
 }
 
 
+header {
+  background-color: #6290c3;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+  z-index: 2;
+}
 
+
+h1, h2{
+  margin: 20px;
+}
+
+img {
+  border: 6px #BAFF29 solid;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  text-align: center;
+  padding: 1em;
+}
+
+/* Class selectors */
+.center {
+  text-align: center;
+}
+
+.inputs {
+  position : relative;
+  width  : 400px;
+  margin : 0 auto;
+  padding: 10px;
+  display  : grid;
+  grid-gap : 20px;
+  grid-template-columns : repeat(2, 1fr);
+  grid-template-rows    : 1em 1em 1em 1em;
+}
+
+/* ID selectors */
+#about-me {
+  margin-top: 100px;
+  display: block;
+  position: relative;
+  text-align: center;
+}
+
+#about-you {
+  text-align: center;
+  display: block;
+  position: relative;
+  margin: 20px;
+}
+
+#animal {
+  align-self: right;
+}
+
+#horse-pic {
+  text-align: center;
+}
